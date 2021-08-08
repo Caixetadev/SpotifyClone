@@ -20,10 +20,6 @@
 }
 
 body {
-  /* height: 100%;
-  width: 100%;
-  display: grid; */
-  grid-template-rows: 5% 60% 35%;
   background-color: #2941ab;
 }
 
@@ -31,10 +27,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
-/* html {
-  height: 1980px;
-} */
 
 ul li {
   list-style: none;
@@ -127,7 +119,7 @@ ul li {
 }
 
 .container-main {
-  height: 95vh;
+  height: 80vh;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 180px;
@@ -153,10 +145,6 @@ ul li {
   line-height: 24px;
 }
 
-/* .container-main a {
-  width: 30px;
-} */
-
 .container-main .btn {
   background: #1ed760;
   color: #2941ab;
@@ -172,32 +160,37 @@ ul li {
 
 .container-main .btn:hover {
   background: #43e57d;
-  transform: scale(1.05) !important;
+  transform: scale(1.05);
 }
+
+/*========== Footer ==========*/
 
 #footer {
   width: 100%;
   background: black;
   color: white;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 #footer .footer-content {
   display: flex;
-  width: 60%;
-  justify-content: space-between;
-  margin: auto;
+  width: 85%;
+  padding-top: 20px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 #footer .footer-content .footer-menu {
-  margin: 0 40px;
   list-style: none;
   font-family: "Caixetafino";
 }
 
+#footer .footer-content .footer-menu p {
+  margin: 20px 0;
+}
+
 #footer .footer-content .footer-menu .footer-menu-item {
-  margin: 25px 0;
-  transition: all 300ms ease;
+  padding: 3px 0 15px;
 }
 
 #footer .footer-content .footer-menu .footer-menu-item:hover {
@@ -219,9 +212,15 @@ ul li {
 }
 
 .socials i {
-  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
   font-size: 1.4rem;
-  transition: all 300ms ease;
+  background-color: #222326;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
 }
 
 .socials i:hover {
@@ -230,29 +229,28 @@ ul li {
 }
 
 /*  Footer Info  */
+
 footer {
-  /* position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 100%; */
   background: black;
 }
 
 .footer-content img {
   width: auto;
   height: 40px;
+  padding: 0 15px;
+  margin-right: -70px;
 }
 
 .footer-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 60%;
+  width: 85%;
   margin: auto;
   color: #9099a0;
   font-family: "Caixetafino";
   font-size: 0.75rem;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .footer-info .footer-info-items {
@@ -262,7 +260,6 @@ footer {
 
 .footer-info .footer-info-items .footer-info-item {
   margin: 0 10px;
-  transition: all 300ms ease;
 }
 
 .footer-info .footer-info-items .footer-info-item:hover {
@@ -275,7 +272,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 10px;
-  transition: all 300ms ease;
+  color: #919496;
 }
 
 .footer-info .rights .country p:hover {
@@ -283,9 +280,6 @@ footer {
   cursor: pointer;
 }
 
-.footer-info .rights .country .brazil-flag {
-  height: 20px;
-  width: auto;
-  display: inline-block;
-  margin-left: 10px;
+svg.svelte-184rsfv {
+  margin: 0 8px 0 0;
 }
